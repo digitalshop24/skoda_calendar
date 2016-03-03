@@ -1,0 +1,521 @@
+
+$grey: #b2b5b7;
+$green: #38b249;
+$greybg: #f1f1f1;
+body {
+	font-family: "SkodaProRegular", sans-serif;
+	font-weight: normal;
+	font-size: 14px;
+	min-width: 320px;
+	position: relative;
+	line-height: 1.6;
+	-webkit-font-smoothing: antialised;
+	overflow-x: hidden;
+	height: 100%;
+	//overflow: hidden;
+} 
+
+h1,h2,h3,h4,h5,h6,p,ul,li {
+  margin:0;
+  padding:0; 
+}
+a, a:hover, a:focus {
+  	text-decoration: none; 
+  	color: #000;
+  	outline: none; }
+ul { 
+  	list-style-type: none;
+}
+h1 {
+  	font-size: 6rem;
+}
+h2 {
+	font-size: 4.5rem; 
+}
+h3 {
+  	font-size: 3rem; 
+} 
+h4 {
+  	font-size: 2.5rem; 
+}
+h5 {
+  	font-size: 1.6rem;
+}
+h6 {
+  	font-size: 1.4rem; 
+}
+
+header {
+  border-bottom: 1px solid #000;
+  font-family: "SkodaProBold", sans-serif;
+  .left_head {
+    
+    img {
+      display: inline-block !important;
+      margin: 0 auto; 
+    }
+    ul {
+      display: inline-block;
+      width: 100%;
+      li {
+        display: inline-block;
+        text-transform: uppercase;
+        padding: 20px 0 20px 0 !important;
+        margin-left:3%; 
+      }
+    }
+    .active_li {
+      border-bottom: 3px solid $green;
+    }
+  }
+  .right_head {
+   
+     ul {
+      display: inline-block;
+      li {
+        display: inline-block;
+        text-transform: uppercase;
+        padding: 10px 20px !important;
+        border-left: 1px solid $grey;
+      }
+    }
+  }
+  .logo {
+    img {
+      margin: 14px auto; 
+    }
+  }
+}
+
+.notice_form {
+  margin: 30px 0;
+  h5 {
+    font-family: "SkodaProBold", sans-serif;
+  }
+  ul {
+    li {
+      display:inline-block;
+    }
+    li:nth-child(1) {
+      
+    }
+    li:nth-child(2) {
+      padding-left: 25px;
+      select {
+        height: 35px;
+        width: 160px;
+        border: 1px solid $grey;
+        color:$grey;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        text-indent: 0.01px; 
+        text-overflow: '';
+        -ms-appearance: none;
+        appearance: none!important;
+        background-image: url('../img/arrow.png');
+        background-position: right center;
+        background-repeat: no-repeat;
+      }
+    }
+    li:nth-child(3) {
+      padding-left: 25px;
+      input {
+        height: 35px;
+        width: 250px;
+        border: 1px solid $grey;
+        color:$grey;
+      }
+    }
+    li:nth-child(4) {
+      padding-left: 10px;
+      .btn_black {
+        height: 35px;
+        width: 120px;
+      }
+    }
+    li:nth-child(5) {
+      float: right;
+      padding-right: 10px;
+      .btn_non {
+        padding-top: 5px;
+      }
+    }
+
+  }
+}
+.calendar {
+  padding: 40px 0 40px 0;
+  .left_calendar {
+    h3 {
+      margin-bottom: 40px;
+      font-family: "SkodaProBold", sans-serif;
+    }
+    .tabel_calendar {
+      font-family: "SkodaProBold", sans-serif;
+      thead {
+        border-bottom: 2px solid $grey;
+        tr {
+          td {
+            border: none;
+          }
+        }
+      }
+      tbody {
+        border-bottom: 1px solid $grey;
+        tr {
+          .day_activ {
+               background-image: url(../img/green_round.png);
+               background-repeat: no-repeat; 
+               background-position: center center;
+               background-size: cover;
+          }
+          td {
+            border: none;
+            p {
+              position: relative;
+              z-index: 2;
+            }
+            .day_grey {
+              color: $grey;
+            }
+            
+          }
+        }
+      }
+    }
+  }
+  .right_calendar {
+    .wrapp_toggle {
+      margin-bottom: 47px;
+      h5 {
+        font-family: "SkodaProBold", sans-serif;
+      }
+    }
+    .time_line {
+      color:$grey;
+      thead {
+        tr {
+          td {
+            border-bottom: 1px solid $grey;
+            border-left: none;
+            border-right: none;
+            width:12.5%;
+          }
+          td:nth-child(1) {
+            width:12.5%;
+            border: none;
+          }
+        }
+      }
+      tbody {
+        tr{
+          td{
+            width:12.5%;
+            padding:0;
+            height: 30px;
+            border: 1px solid $grey;
+          }
+        }
+        tr:nth-child(odd) {
+          td {
+            border-bottom: 1px dotted $grey;
+          }
+          td[rowspan] {
+            border:none;
+            text-align: right;
+            padding-right: 15px;
+            vertical-align: middle;
+            font-family: "SkodaProBold", sans-serif;
+          }
+        }
+        tr:nth-child(even) {
+          td {
+            border-top: none;
+          }
+          td[rowspan] {
+            border:none;
+            text-align: right;
+            padding-right: 15px;
+            vertical-align: middle;
+            
+          }
+        }
+      }
+    }
+  }
+  
+}
+
+footer {
+  padding: 70px 0;
+  background-color:#060810;
+  h5 {
+    color: #fff;
+  }
+  ul {
+    display: inline-block;
+    padding-top:10px;
+    li {
+      display: inline-block;
+      padding-right: 10px;
+      color: $grey;
+    }
+  }
+  .social_icon {
+    ul {
+      li {
+        // background-color: #fff;
+        border-radius: 50%;
+        width:50px;
+        height: 50px;
+        margin-right: 10px;
+        i {
+          padding: 50%;
+        }
+      }
+      li:nth-child(1) {
+        background-color: #2e3192;
+      }
+      li:nth-child(2) {
+        background-color: #00aeef;
+      }
+      li:nth-child(3) {
+        background-color: #ed3123;
+      }
+      li:nth-child(4) {
+        background-color: #54769a;
+      }
+    }
+  }
+} 
+
+/* =====================================================
+   Some defaults across all toggle demos
+   ===================================================== */
+.wrapp_toggle {
+  h5 {
+    display: inline-table;
+    position: relative;
+    top: -5px;
+    padding-right: 10px;
+  }
+  .toggle {
+    display: inline-table;
+  }
+}
+.toggle {
+  display: block;
+  text-align: center;
+  // margin-top: 40px;
+  user-select: none;
+}
+  .toggle--checkbox {
+    display: none;
+  }
+  .toggle--btn {
+    display: block;
+    margin: 0 auto;
+
+    font-size: 1.4em;
+
+    transition: all 350ms ease-in;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .toggle--btn,
+  .toggle--checkbox,
+  .toggle--feature {
+    &,
+    &:before,
+    &:after {
+      transition: all 250ms ease-in;
+    }
+    &:before,
+    &:after {
+      content: '';
+      display: block;
+    }
+  }
+
+
+
+/* =====================================================
+   Toggle - knob button style
+   ===================================================== */
+
+  $toggleHeight: 20px;
+  $toggleWidth: 55px;
+
+  // $toggleBtnRadius: 17px;
+  $toggleBtnColor: #fff;
+
+  $toggle-bgColor--inactive: $grey;
+  $toggle-bgColor--active: $green;
+
+  $toggle-textColor: #fff;
+
+  .toggle--knob {
+
+    & .toggle--btn {
+      position: relative;
+      width: $toggleWidth;
+      height: $toggleHeight;
+
+      // font-family: 'PT Sans', Sans Serif;
+      text-transform: uppercase;
+      color: $toggle-textColor;
+
+      background: $toggle-bgColor--active;
+      // box-shadow: inset 0 20px 40px -10px #7b9d25;
+      border-radius: 40px;
+      font-size: 12px;
+      //contains the actual knob part of the button and the 'on' text
+      &:before {
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 62%;
+        transform: translateY(-50%);
+
+        width: 20px;
+        height: 18px;
+        border-radius: 50%;
+        background: $toggleBtnColor;
+        // box-shadow: 0 4px 10px 0 #999,
+        //       inset 0 10px 10px 8px rgba($toggleBtnColor, 0.6),
+        //       inset 0 0 8px 0px #333,
+        //       inset 0 0 0 13px #ccc,
+        //       inset 0 0 0 14px $toggleBtnColor;
+
+        text-indent: -100%;
+      }
+    }
+
+    & .toggle--feature {
+      position: relative;
+      display: block;
+      overflow: hidden;
+      height: $toggleHeight;
+      // text-shadow: 0 1px 2px #666;
+
+      &:before,
+      &:after {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      &:before {
+        content: attr(data-label-on);
+        left: 20%;
+      }
+      &:after {
+        content: attr(data-label-off);
+        right: -60%;
+      }
+    }
+
+    & .toggle--checkbox {
+      &:checked {
+        & + .toggle--btn {
+          background: $toggle-bgColor--inactive;
+          // box-shadow: inset 0 20px 40px -10px #7e7e7e;
+
+          &:before { left: 2%; }
+
+          & .toggle--feature {
+            &:before  { left: -60%; }
+            &:after   { right: 13%; }
+          }
+        }
+      }
+    }
+  }
+
+
+.bg_grey {
+  background-color: $greybg;
+}
+.btn_black {
+  color: #000;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  font-size: 17px;
+}
+.btn_black:hover {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #000;
+}
+
+.btn_non {
+  color:$grey;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  font-size: 16px;
+}
+.board {
+  position: absolute;
+  background-color: #fff;
+  width: 11.9%;
+  height: 60px;
+  color: #000;
+  border-top:3px solid $green;
+  font-size: 12px;
+  margin-top: -1px;
+  font-family: "SkodaProBold", sans-serif;
+  input {
+    background: url(../img/chek.png) no-repeat;
+  }
+  label {
+    width: 23px; /* Ширина рисунка */
+    height: 23px; /* Высота рисунка */
+    display: inline-block;
+    position: relative; /* Относительное позиционирование */
+    margin-top: 5px;
+    display:none;
+  }
+  input[type="checkbox"] + span {
+    position: absolute; /* Абсолютное позиционирование */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../img/chek.jpg) no-repeat;
+    cursor: pointer; /* Курсор в виде руки */
+    border: 1px solid $grey;
+    border-radius: 3px;
+
+  }
+  input[type="checkbox"]:checked + span   {
+    background: url(../img/check-box.jpg) no-repeat;
+  }
+  h6 {
+    display: none;
+  }
+}
+.board:hover {
+  p {
+    display: none;
+  }
+  h6, input, label {
+    display: inline-block;
+  }
+}
+
+.board_activ {
+  position: absolute;
+  background-color: $green;
+  width: 11.9%;
+  height: 60px;
+  color: #fff;
+  border-top:3px solid $green;
+  font-size: 12px;
+  margin-top: -1px;
+  font-family: "SkodaProBold", sans-serif;
+
+}
