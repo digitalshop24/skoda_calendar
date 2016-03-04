@@ -23,10 +23,10 @@
 <header>
 	<div class="container-fluid">
 		<div class="row">
-			<div class="col-md-2 logo text-center">
+			<div class="col-sm-12 col-md-2 logo text-center">
 				<a href="index.html"><img src="img/logo.png" alt="" class="img-responsive"></a>
 			</div>
-			<div class="col-md-6 left_head text-left">
+			<div class="col-sm-12 col-md-10 left_head text-left">
 				<ul>
 					<li><a href="">Новости</a></li>
 					<li><a href="">Прогнозы</a></li>
@@ -36,7 +36,7 @@
 					<li><a href="">Форум</a></li>
 				</ul>
 			</div>
-			<div class="col-md-4 right_head text-right">
+			<div class="right_head text-right">
 				<ul>
 					<li><a href=""><img src="img/skoda_rul.jpg" alt="" class="img-responsive"></a></li>
 					<li><a href=""><img src="img/skoda_arrow.jpg" alt="" class="img-responsive"></a></li>
@@ -46,44 +46,35 @@
 		</div>
 	</div>		
 </header>
-<section>
+<aside>
 	<div class="container">
-		<div class="row">
-			<div class="col-md-12">
-				<form action="" class="notice_form">
-					<ul >
-						<li>
-							<h5>Хочу получать уведомление о событиях</h5>
-						</li>
-						<li>
-							<select>
-							  <option>Все события</option>
-							  <option>Не все события</option>
-							</select>
-						</li>
-						<li>
-							<input type="text" placeholder="Введите Ваш почтовый адрес">
-						</li>
-						<li>
-							<button class="btn_black">Подписаться</button>
-						</li>
-
-						<li>
-							<button class="btn_non">Скрыть</button>
-						</li>
-					</ul>
-				</form>
-			</div>
+		<div class="row notice_form">
+			<form action="" >
+				<div class="col-sm-12 col-md-4 text-center">
+					<h5>Хочу получать уведомление о событиях</h5>
+				</div>
+				<div class="col-sm-12 col-md-7 text-center">
+					<select>
+						<option>Все события</option>
+						<option>Не все события</option>
+					</select>
+					<input type="text" placeholder="Введите Ваш почтовый адрес">
+					<button class="btn_black">Подписаться</button>
+				</div>
+				<div class="col-sm-12 col-md-1 text-center">
+					<button class="btn_non">Скрыть</button>
+				</div>
+			</form>
 		</div>
 	</div>
-</section>
+</aside>
 <!-- календарь -->
 <section class="bg_grey calendar">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-3 col-lg-3 text-center left_calendar"> <!-- Месяц и дни календаря -->
+			<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 text-center left_calendar"> <!-- Месяц и дни календаря -->
 				<h3>Февраль</h3>
-				<table class="table tabel_calendar">
+				<table class="tabel_calendar">
 					<thead>
 						<tr>
 							<td>Вс</td>
@@ -149,28 +140,28 @@
 			</div> 
 			<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 right_calendar"> <!-- временная сетка -->
 				<div class="row text-right wrapp_toggle">
-					<div class="col-md-3">
+					<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
 						<h5>Матчи</h5>
 						<div class="toggle toggle--knob">
 							<input type="checkbox" id="toggle--knob" class="toggle--checkbox">
 							<label class="toggle--btn" for="toggle--knob"><span class="toggle--feature" data-label-on="on"  data-label-off="off"></span></label>
 						</div>
 					</div>
-					<div class="col-md-3">
+					<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
 						<h5>События</h5>
 						<div class="toggle toggle--knob">
 							<input type="checkbox" id="toggle--knob1" class="toggle--checkbox">
 							<label class="toggle--btn" for="toggle--knob1"><span class="toggle--feature" data-label-on="on"  data-label-off="off"></span></label>
 						</div>
 					</div>
-					<div class="col-md-3">
+					<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
 						<h5>Новости</h5>
 						<div class="toggle toggle--knob">
 							<input type="checkbox" id="toggle--knob2" class="toggle--checkbox">
 							<label class="toggle--btn" for="toggle--knob2"><span class="toggle--feature" data-label-on="on"  data-label-off="off"></span></label>
 						</div>
 					</div>
-					<div class="col-md-3">
+					<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
 						<h5>Мои отметки</h5>
 						<div class="toggle toggle--knob">
 							<input type="checkbox" id="toggle--knob3" class="toggle--checkbox">
@@ -322,7 +313,7 @@
 <footer>
 	<div class="container">
 		<div class="row">
-			<div class="col-md-4">
+			<div class="col-sm-12 col-md-4">
 				<h5>Помощь</h5>
 				<ul>
 					<a href=""><li>Задайте вопрос</li></a>
@@ -330,15 +321,15 @@
 					<a href=""><li>О проекте</li></a>
 				</ul>
 			</div>
-			<div class="col-md-5">
+			<div class="col-sm-12 col-md-5">
 				<h5>Ресурсы:</h5>
 				<ul>
 					<a href=""><li>www.lihf.com</li></a>
-					<a href=""><li>www.shoda-auto.com</li></a>
-					<a href=""><li>www.shoda-auto.ru</li></a>
+					<a href=""><li>www.skoda-auto.com</li></a>
+					<a href=""><li>www.skoda-auto.ru</li></a>
 				</ul>
 			</div>
-			<div class="col-md-3 social_icon">
+			<div class="col-sm-12 col-md-3 social_icon">
 				<ul >
 					<a href=""><li><i class="fa fa-facebook"></i></li></a>
 					<a href=""><li><i class="fa fa-facebook"></i></li></a>

@@ -35,7 +35,7 @@ h4 {
   font-size: 2.5rem; }
 
 h5 {
-  font-size: 1.6rem; }
+  font-size: 1.5rem; }
 
 h6 {
   font-size: 1.4rem; }
@@ -56,55 +56,64 @@ header {
       margin-left: 3%; }
   header .left_head .active_li {
     border-bottom: 3px solid #38b249; }
-  header .right_head ul {
-    display: inline-block; }
-    header .right_head ul li {
-      display: inline-block;
-      text-transform: uppercase;
-      padding: 10px 20px !important;
-      border-left: 1px solid #b2b5b7; }
+  header .right_head {
+    position: absolute;
+    right: 0; }
+    header .right_head ul {
+      display: inline-block; }
+      header .right_head ul li {
+        display: inline-flex;
+        text-transform: uppercase;
+        padding: 15px 20px !important;
+        border-left: 1px solid #b2b5b7; }
   header .logo img {
     margin: 14px auto; }
 
 .notice_form {
   margin: 30px 0; }
   .notice_form h5 {
-    font-family: "SkodaProBold", sans-serif; }
-  .notice_form ul li {
-    display: inline-block; }
-  .notice_form ul li:nth-child(2) {
-    padding-left: 25px; }
-    .notice_form ul li:nth-child(2) select {
-      height: 35px;
-      width: 160px;
-      border: 1px solid #b2b5b7;
-      color: #b2b5b7;
-      -webkit-appearance: none;
-      -moz-appearance: none;
-      text-indent: 0.01px;
-      text-overflow: '';
-      -ms-appearance: none;
-      appearance: none !important;
-      background-image: url("../img/arrow.png");
-      background-position: right center;
-      background-repeat: no-repeat; }
-  .notice_form ul li:nth-child(3) {
-    padding-left: 25px; }
-    .notice_form ul li:nth-child(3) input {
-      height: 35px;
-      width: 250px;
-      border: 1px solid #b2b5b7;
-      color: #b2b5b7; }
-  .notice_form ul li:nth-child(4) {
-    padding-left: 10px; }
-    .notice_form ul li:nth-child(4) .btn_black {
-      height: 35px;
-      width: 120px; }
-  .notice_form ul li:nth-child(5) {
-    float: right;
-    padding-right: 10px; }
-    .notice_form ul li:nth-child(5) .btn_non {
-      padding-top: 5px; }
+    font-family: "SkodaProBold", sans-serif;
+    padding-top: 12px; }
+  .notice_form select {
+    height: 40px;
+    width: 160px;
+    border: 1px solid #b2b5b7;
+    color: #b2b5b7;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 0.01px;
+    text-overflow: '';
+    -ms-appearance: none;
+    appearance: none !important;
+    background-image: url("../img/arrow.png");
+    background-position: right center;
+    background-repeat: no-repeat;
+    padding-left: 10px;
+    border-radius: 2px; }
+  .notice_form select:focus {
+    border: 1px solid #b2dca9;
+    color: #000; }
+  .notice_form select:active {
+    border: 1px solid #b2dca9;
+    color: #000; }
+  .notice_form input {
+    height: 40px;
+    width: 250px;
+    border: 1px solid #b2b5b7;
+    color: #b2b5b7;
+    padding-left: 15px;
+    border-radius: 2px;
+    margin-left: 15px; }
+  .notice_form input:focus {
+    border: 1px solid #b2dca9;
+    color: #000; }
+  .notice_form .btn_black {
+    height: 40px;
+    width: 120px;
+    margin-left: 15px; }
+  .notice_form .btn_non {
+    padding-top: 5px;
+    float: right; }
 
 .calendar {
   padding: 40px 0 40px 0; }
@@ -112,29 +121,36 @@ header {
     margin-bottom: 40px;
     font-family: "SkodaProBold", sans-serif; }
   .calendar .left_calendar .tabel_calendar {
-    font-family: "SkodaProBold", sans-serif; }
+    font-family: "SkodaProBold", sans-serif;
+    margin: 0 auto; }
     .calendar .left_calendar .tabel_calendar thead {
       border-bottom: 2px solid #b2b5b7; }
       .calendar .left_calendar .tabel_calendar thead tr td {
-        border: none; }
+        border: none;
+        width: 36px;
+        height: 36px; }
     .calendar .left_calendar .tabel_calendar tbody {
       border-bottom: 1px solid #b2b5b7; }
       .calendar .left_calendar .tabel_calendar tbody tr .day_activ {
-        background-image: url(../img/green_round.png);
         background-repeat: no-repeat;
         background-position: center center;
-        background-size: cover; }
+        background-size: cover;
+        background-color: #38b249;
+        border-radius: 50%; }
       .calendar .left_calendar .tabel_calendar tbody tr td {
-        border: none; }
+        border: none;
+        width: 36px;
+        height: 36px; }
         .calendar .left_calendar .tabel_calendar tbody tr td p {
           position: relative;
           z-index: 2; }
         .calendar .left_calendar .tabel_calendar tbody tr td .day_grey {
           color: #b2b5b7; }
   .calendar .right_calendar .wrapp_toggle {
-    margin-bottom: 47px; }
+    margin-bottom: 35px; }
     .calendar .right_calendar .wrapp_toggle h5 {
-      font-family: "SkodaProBold", sans-serif; }
+      font-family: "SkodaProBold", sans-serif;
+      padding-top: 15px; }
   .calendar .right_calendar .time_line {
     color: #b2b5b7; }
     .calendar .right_calendar .time_line thead tr td {
@@ -244,7 +260,7 @@ footer {
    ===================================================== */
 .toggle--knob .toggle--btn {
   position: relative;
-  width: 55px;
+  width: 50px;
   height: 20px;
   text-transform: uppercase;
   color: #fff;
@@ -255,7 +271,7 @@ footer {
     display: block;
     position: absolute;
     top: 50%;
-    left: 62%;
+    left: 59%;
     transform: translateY(-50%);
     width: 20px;
     height: 18px;
@@ -347,7 +363,8 @@ footer {
   .board input[type="checkbox"]:checked + span {
     background: url(../img/check-box.jpg) no-repeat; }
   .board h6 {
-    display: none; }
+    display: none;
+    font-size: 12px; }
 
 .board:hover p {
   display: none; }

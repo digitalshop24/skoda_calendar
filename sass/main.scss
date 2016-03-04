@@ -39,7 +39,7 @@ h4 {
   	font-size: 2.5rem; 
 }
 h5 {
-  	font-size: 1.6rem;
+  	font-size: 1.5rem;
 }
 h6 {
   	font-size: 1.4rem; 
@@ -49,7 +49,6 @@ header {
   border-bottom: 1px solid #000;
   font-family: "SkodaProBold", sans-serif;
   .left_head {
-    
     img {
       display: inline-block !important;
       margin: 0 auto; 
@@ -69,13 +68,14 @@ header {
     }
   }
   .right_head {
-   
-     ul {
+    position:absolute;
+    right:0;
+    ul {
       display: inline-block;
       li {
-        display: inline-block;
+        display: inline-flex;
         text-transform: uppercase;
-        padding: 10px 20px !important;
+        padding: 15px 20px !important;
         border-left: 1px solid $grey;
       }
     }
@@ -91,18 +91,10 @@ header {
   margin: 30px 0;
   h5 {
     font-family: "SkodaProBold", sans-serif;
+    padding-top: 12px;
   }
-  ul {
-    li {
-      display:inline-block;
-    }
-    li:nth-child(1) {
-      
-    }
-    li:nth-child(2) {
-      padding-left: 25px;
-      select {
-        height: 35px;
+  select {
+        height: 40px;
         width: 160px;
         border: 1px solid $grey;
         color:$grey;
@@ -115,33 +107,42 @@ header {
         background-image: url('../img/arrow.png');
         background-position: right center;
         background-repeat: no-repeat;
+        padding-left:10px;
+        border-radius: 2px;
       }
-    }
-    li:nth-child(3) {
-      padding-left: 25px;
+      select:focus {
+        border: 1px solid #b2dca9;
+        // background-image: url('../img/arrow_activ_invers.png');
+        color: #000;
+      }
+      select:active {
+        border: 1px solid #b2dca9;
+        // background-image: url('../img/arrow_activ_invers.png');
+        color: #000;
+      }
+ 
       input {
-        height: 35px;
+        height: 40px;
         width: 250px;
         border: 1px solid $grey;
         color:$grey;
+        padding-left:15px;
+        border-radius: 2px;
+        margin-left:15px; 
       }
-    }
-    li:nth-child(4) {
-      padding-left: 10px;
+      input:focus {
+        border: 1px solid #b2dca9;
+        color:#000;
+      }
       .btn_black {
-        height: 35px;
+        height: 40px;
         width: 120px;
+        margin-left:15px; 
       }
-    }
-    li:nth-child(5) {
-      float: right;
-      padding-right: 10px;
       .btn_non {
         padding-top: 5px;
+        float:right;
       }
-    }
-
-  }
 }
 .calendar {
   padding: 40px 0 40px 0;
@@ -152,11 +153,14 @@ header {
     }
     .tabel_calendar {
       font-family: "SkodaProBold", sans-serif;
+      margin: 0 auto;
       thead {
         border-bottom: 2px solid $grey;
         tr {
           td {
             border: none;
+            width: 36px;
+            height: 36px;
           }
         }
       }
@@ -164,13 +168,17 @@ header {
         border-bottom: 1px solid $grey;
         tr {
           .day_activ {
-               background-image: url(../img/green_round.png);
-               background-repeat: no-repeat; 
-               background-position: center center;
-               background-size: cover;
+              // background-image: url(../img/green_round.png);
+              background-repeat: no-repeat; 
+              background-position: center center;
+              background-size: cover; 
+              background-color: $green;
+              border-radius: 50%;
           }
           td {
             border: none;
+            width: 36px;
+            height: 36px;
             p {
               position: relative;
               z-index: 2;
@@ -186,9 +194,11 @@ header {
   }
   .right_calendar {
     .wrapp_toggle {
-      margin-bottom: 47px;
+      margin-bottom: 35px;
       h5 {
         font-family: "SkodaProBold", sans-serif;
+        padding-top: 15px;
+
       }
     }
     .time_line {
@@ -347,7 +357,7 @@ footer {
    ===================================================== */
 
   $toggleHeight: 20px;
-  $toggleWidth: 55px;
+  $toggleWidth: 50px;
 
   // $toggleBtnRadius: 17px;
   $toggleBtnColor: #fff;
@@ -377,7 +387,7 @@ footer {
         display: block;
         position: absolute;
         top: 50%;
-        left: 62%;
+        left: 59%;
         transform: translateY(-50%);
 
         width: 20px;
@@ -496,6 +506,7 @@ footer {
   }
   h6 {
     display: none;
+    font-size: 12px;
   }
 }
 .board:hover {
